@@ -1,0 +1,53 @@
+/*DCOUMENTO CSS*/
+
+* {margin: 0;
+    padding: 0;}
+
+body {margin-top: 200px; }
+
+.container {width: 300px;
+            margin: auto; 
+            padding: 16px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;}
+
+.items { width: 100%;
+        min-height: 1px;
+        font-size: 250px;
+        text-align: center;
+        padding: 160px;
+        box-sizing: border-box; }
+
+        .items i {color: rgb(154, 243, 146);}
+
+        .items i:hover {color: black;}
+
+        .items i:active {color: rgb(1, 73, 29);}
+
+        .items i.fb:hover {color: blue;}
+
+        /*BREAKPOINT 768*/
+
+        @media only screen and (min-width:768px)  {
+
+            .container { flex-direction: row; ;
+                        justify-content: space-between;
+                        min-height: 1px;}
+
+            .items {width: 31%; 
+                    font-size: 200px;}
+
+        }
+
+        /*BREAKPOINT 1380*/
+          @media only screen and (min-width:1380px)  {
+
+            .container { justify-content: center;
+                        width: 250px; ;}
+
+            .items { font-size: 3em;
+                    padding: 0px; }
+
+        
+        }
